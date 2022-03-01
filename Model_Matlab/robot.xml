@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="nikod" on="11/22/21||20:20:43" using="Simscape Multibody Link Version 7.0" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="Assembly.iam" uid="Assembly.iam_{A897A082-484C-0793-3B3B-209B08BB538B}" version="{E145EAF2-D42A-A764-1832-D038D439A991}">
+<AssemblyFile name="Assembly.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="podstawa:1" uid="podstawa:1" entityUid="podstawa.ipt_{8A040721-4287-246E-D53F-2C985650B834}">
+<Transform>
+<Rotation>0 0 1 -1.0000000000000007 0 0 0 -1 0</Rotation>
+<Translation>5.6843418860808797e-14 209.82758827624878 680.53292136969287</Translation>
+</Transform>
+</Instance>
+<Instance name="srodek:1" uid="srodek:1" entityUid="srodek.ipt_{8A040721-4287-246E-D53F-2C985650B834}">
+<Transform>
+<Rotation>-0.99999999999999967 1.7726052530515326e-15 0 0 -2.7421402762830092e-16 1.0000000000000004 0 0.99999999999999944 0</Rotation>
+<Translation>400.44809114266639 -210.6205028664175 -660.53292136969253</Translation>
+</Transform>
+</Instance>
+<Instance name="klocek:1" uid="klocek:1" entityUid="klocek.ipt_{C33BCEDC-4F70-AEC6-E007-F78CE6ADA958}">
+<Transform>
+<Rotation>6.0689938139296218e-16 0.99999999999999944 -4.0367355160442023e-16 -1.8795161487990035e-16 0 1.0000000000000029 0.99999999999999944 0 0</Rotation>
+<Translation>238.56565437450001 9.379497133582424 -0.35858642335851437</Translation>
+</Transform>
+</Instance>
+<Instance name="ramie:1" uid="ramie:1" entityUid="ramie.ipt_{11099F64-4190-CBD1-0392-EAB5BBB1B955}">
+<Transform>
+<Rotation>-0.90065429838400557 1.1601538936216046e-15 -0.43453634462771562 -0.43453634462771573 -1.8795161487990064e-16 0.90065429838400624 9.6322578338045007e-16 1 6.7340846196974122e-16</Rotation>
+<Translation>250.00000000000108 19.379497133582458 -100</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Mate:1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>srodek:1</Uid>
+</InstancePath>
+<Position>180.44809114266744 670.53292136969333 249.99999999999989</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>podstawa:1</Uid>
+</InstancePath>
+<Position>170.44809114266604 670.53292136969287 20</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>srodek:1</Uid>
+</InstancePath>
+<Position>160.44809114266744 670.53292136969321 9.9999999999999716</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>podstawa:1</Uid>
+</InstancePath>
+<Position>410.44809114266587 670.53292136969287 20</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>klocek:1</Uid>
+</InstancePath>
+<Position>10.358586423358529 -8.5656543744987914 19.99999999999995</Position>
+<Axis>-1.879516148799004e-16 -4.7184478546569212e-16 -0.99999999999999734</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>srodek:1</Uid>
+</InstancePath>
+<Position>170.44809114266744 670.53292136969321 19.999999999999972</Position>
+<Axis>0 2.7421402762830102e-16 0.99999999999999956</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Flush:1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>klocek:1</Uid>
+</InstancePath>
+<Position>0.35858642335851393 1.434345625501237 0</Position>
+<Axis>-1.0000000000000007 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>srodek:1</Uid>
+</InstancePath>
+<Position>160.44809114266741 660.53292136969333 259.99999999999989</Position>
+<Axis>-1.7726052530515324e-15 -1.0000000000000004 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ramie:1</Uid>
+</InstancePath>
+<Position>-2.8421709430404007e-14 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>klocek:1</Uid>
+</InstancePath>
+<Position>49.348381279022107 11.434345625501237 9.9999999999999716</Position>
+<Axis>-1.0000000000000007 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>ramie:1</Uid>
+</InstancePath>
+<Position>0 120 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>klocek:1</Uid>
+</InstancePath>
+<Position>20.358586423358524 11.434345625501237 9.9999999999999716</Position>
+<Axis>-1.0000000000000007 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Joints>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="klocek.ipt" uid="klocek.ipt_{C33BCEDC-4F70-AEC6-E007-F78CE6ADA958}" version="{DE84DF4B-A00A-B78D-C525-8D5B000712CB}">
+<PartFile name="klocek.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>12.298451302091044</Mass>
+<CenterOfMass>10.358586423407196 -0.048381971962796033 10.000000000133559</CenterOfMass>
+<Inertia>1958.0658173682916 872.22947083199438 1977.6736074489631 -1.8859881492971908e-08 4.6566128730773927e-13 5.0995249694096857e-09</Inertia>
+</MassProperties>
+<GeometryFile name="klocek_ipt_fa86c31d.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="podstawa.ipt" uid="podstawa.ipt_{8A040721-4287-246E-D53F-2C985650B834}" version="{BFB18109-5EE6-F98F-39BA-2CF26624F8CB}">
+<PartFile name="podstawa.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>59.991590543484577</Mass>
+<CenterOfMass>290.44809114266604 670.53292136969264 130.00000000000037</CenterOfMass>
+<Inertia>575974.45595710375 1439853.3597618083 866295.6520014687 -1.9073486328125e-09 -9.5367431640625002e-10 -3.8146972656250001e-09</Inertia>
+</MassProperties>
+<GeometryFile name="podstawa_ipt_15195c3c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ramie.ipt" uid="ramie.ipt_{11099F64-4190-CBD1-0392-EAB5BBB1B955}" version="{3AC09ABB-639D-F8B2-12F8-BBCFA278F9D0}">
+<PartFile name="ramie.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>13.089969389957831</Mass>
+<CenterOfMass>4.2350285570496518e-10 80.199999999999875 2.2233688704467981e-15</CenterOfMass>
+<Inertia>25272.93478327784 239.5464280606578 25272.934806718113 2.3341272026300396e-12 2.328306436661952e-13 -3.9129063952714921e-08</Inertia>
+</MassProperties>
+<GeometryFile name="ramie_ipt_a44a51bd.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="srodek.ipt" uid="srodek.ipt_{8A040721-4287-246E-D53F-2C985650B834}" version="{5A6EF77F-F2DA-B2AB-8AE9-60213419395A}">
+<PartFile name="srodek.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>27.45110522233464</Mass>
+<CenterOfMass>170.44809114290604 670.53292136969264 130.00000000000045</CenterOfMass>
+<Inertia>251317.92628142165 251245.98576482318 1110.668593372345 -4.7683715820312501e-10 3.6215782165527342e-07 -1.430511474609375e-09</Inertia>
+</MassProperties>
+<GeometryFile name="srodek_ipt_15195c3c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
